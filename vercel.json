@@ -1,0 +1,9 @@
+{
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/:route*",
+      "destination": "/index.html"
+    }
+  ]
+}

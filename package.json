@@ -1,0 +1,41 @@
+{
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "echo \"This template does not include a test runner by default.\" && exit 1",
+    "dev": "run-p start ob:watch",
+    "json": "cd json-editor && npm install && npm start",
+    "ob:run": "node src/backend.js",
+    "ob:watch": "watchexec -rw src/backend.js 'npm run ob:run'"
+  },
+  "prettier": {
+    "singleAttributePerLine": false
+  },
+  "devDependencies": {
+    "@snowpack/plugin-postcss": "~1.4.3",
+    "@snowpack/plugin-svelte": "~3.7",
+    "autoprefixer": "~10.4.1",
+    "npm-run-all": "~4.1.5",
+    "postcss": "~8.4.5",
+    "postcss-import": "~14.1.0",
+    "prettier": "~2.7.1",
+    "snowpack": "~3.8"
+  },
+  "dependencies": {
+    "clsx": "~1.1.1",
+    "dayjs": "~1.10",
+    "fuse.js": "~6.5.3",
+    "halfmoon": "~1.1.1",
+    "lodash.chunk": "~4.2.0",
+    "lodash.mapvalues": "~4.6.0",
+    "lodash.topairs": "~4.3.0",
+    "minimist": "~1.2.6",
+    "nanoid": "~3.3.3",
+    "redis": "~4.1.0",
+    "svelte": "~3.44",
+    "tailwindcss": "~3.0.9",
+    "tinro": "~0.6.10",
+    "url-slug": "~3.0.2",
+    "ws": "~8.6.0"
+  }
+}
